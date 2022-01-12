@@ -1,1 +1,1 @@
-# Setup NodeJs with Typescript
+# Initial setup NodeJs with Typescript.
