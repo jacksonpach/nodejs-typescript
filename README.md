@@ -1,2 +1,1 @@
-# nodejs-typescript
-# nodejs-typescript
+# Setuo nodejs with typescript
