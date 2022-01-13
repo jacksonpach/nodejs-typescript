@@ -1,10 +1,18 @@
 import { Router, Request, Response } from 'express';
 
-const router = Router();
+class Routes{
+    router: any
 
-router.get('/', (req: Request, res: Response) => {
-    return res.json("NodeJs with Typescript");
-});
+    constructor() {
+        this.router = Router();
+        this.createRoutes();
+    }
 
-export default router;
+    createRoutes() {
+        this.router.get('/', (req: Request, res: Response) => res.send("NodeJs with Typescript"));
+        this.router.get('/home', (req: Request, res: Response) => res.send("Home"));
+    }
+
+}
+export default new Routes();
 

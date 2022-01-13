@@ -1,16 +1,11 @@
 import express from 'express'
 
-import { Router } from 'express';
-import router from "./routes";
+import Routes from "./routes";
 
 const app = express();
 
-const route = Router()
-
 app.use(express.json())
 
-app.use(router)
-
-app.use(route)
+app.use(Routes.router)
 
 app.listen(3333, () => 'server running on http://localhost:3333')
