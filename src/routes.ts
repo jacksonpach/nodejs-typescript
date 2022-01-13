@@ -1,7 +1,7 @@
 import { Router, Request, Response } from 'express';
 
 class Routes{
-    router: any
+    router: Router
 
     constructor() {
         this.router = Router();
